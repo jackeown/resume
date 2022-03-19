@@ -1,22 +1,155 @@
 <!doctype html>
 
 <html>
-  <head>
-    <link rel="stylesheet" href="https://latex.now.sh/style.css">
-  </head>
-  
-  <body>
-    <!-- 
+
+<head>
+  <link rel="stylesheet" href="https://latex.now.sh/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+
+  <style>
+
+    .education{
+
+    }
+
+    .skills {
+      height: 15em;
+    }
+
+    .research {
+      page-break-after: always;
+    }
+
+    .software-projects{
+
+    }
+
+
+
+
+
+    @keyframes fadein {
+      from {
+        opacity: 0%;
+      }
+
+      to {
+        opacity: 100%;
+      }
+    }
+
+    @media screen {
+      .education, .skills, .research, .software-projects {
+        animation-name: fadein;
+        animation-duration: 2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+      .education { animation-delay: 0s;}
+      .skills { animation-delay: 1s;}
+      .research { animation-delay: 2s;}
+      .software-projects { animation-delay: 2s;}
+    }
+
+
+
+  </style>
+  <!-- 
       What To Include:
       
       + Education 
       + Projects worked on (IDV, StarExec, etc.)
       + Interests / Hobbies
     -->
-    
-    <h1> Jack McKeown </h1>
-    
-    
-  </body>
-  
+
+  <h1> Jack McKeown </h1>
+
+  <div class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <b>University of Minnesota, Duluth <span style="float:right;">2014 - 2018</span></b> <br>
+        <ul>
+          <li>Bachelor of Science in Mathematics and Computer Science</li>
+        </ul>
+      </li>
+
+
+      <li>
+        <b>University of Miami <span style="float:right;">2018 - &nbsp&nbsp&nbsp&nbsp</span></b><br>
+        <ul>
+          <li>Master of Science in Computer Science - 2021</li>
+          <li>Currently a 4th year Ph.D. Student</li>
+          <li>Advised by Dr. Geoff Sutcliffe (The TPTP guy!)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skills">
+    <h2>Programming Languages / Skills</h2>
+    <ul style="float:left;">
+      <li>I have strong knowledge of
+        <ul>
+          <li>Python</li>
+          <li>PyTorch</li>
+          <li>C & C++</li>
+          <li>Git & Github</li>
+          <li>HTML, CSS, & JavaScript</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul style="float: right">
+      <li>
+        I have some experience with
+        <ul>
+          <li>Java</li>
+          <li>Docker</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="research">
+    <h2>Research Interests</h2>
+    <p>
+      I am interested in machine learning and automated theorem proving.
+      I enjoy exploring how these two fields can mutually benefit each-other.
+      I believe that machine learning can benefit automated reasoning by providing heuristics
+      and I believe that automated reasoning can benefit machine learning by providing strong inductive biases.
+    </p>
+
+    <p></p>
+
+
+  </div>
+
+
+
+  <div class="software-projects">
+    <h2>Software Projects - <a href="https://github.com/jackeown"><i class="fa-brands fa-github"></i></a></h2>
+    <ul>
+      <li><a href="http://www.tptp.org/cgi-bin/SystemOnTSTP?TPTPProblem=PUZ001%2B1&SystemAndVersion=E---2.6">IDV -
+          Interactive Derivation Viewer</a> - I helped my advisor Geoff Sutcliffe port IDV (a proof visualization
+        software) to JavaScript and HTML from its old form as a Java applet.</li>
+      <li><a href="https://starexec.ccs.miami.edu">StarExec Miami</a> - I help to maintain the Miami fork of StarExec
+        (an online theorem proving testbed).</li>
+      <li><a href="https://github.com/jackeown/TableauxVisualization">TableauxVisualization</a> - A visualization of the
+        ALC Tableaux Algorithm I made for a Semantic Web class.</a></li>
+      <li><a href="https://github.com/jackeown/tree2Net">tree2Net</a> - A simple project I made to convert a sci-kit
+        learn decision tree into a roughly equivalent pytorch neural network module.</li>
+      <li><a href="https://github.com/jackeown/nnInitializations">nnInitializations</a> - My final project for a deep
+        learning class, where I explore various weight initializations for neural networks.</li>
+      <li><a href="https://github.com/jackeown/PythonCExtensions">PythonCExtensions</a> - A minimal example of C and C++
+        extensions for Python.</li>
+      <li><a href="https://github.com/jackeown/whoIsHome">whoIsHome</a> - A friendly network monitoring tool.</li>
+    </ul>
+  </div>
+
+</body>
+
 </html>

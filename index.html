@@ -28,30 +28,197 @@
     }
 
 
+    @keyframes chromaberation {
 
+      
+      1% {
+      text-shadow:0.05px 0.00px 1px red,
+                    -0.03px 0.04px 1px green,
+                    -0.02px -0.04px 1px blue; 
+     } 
+    
+    
+
+    
+     8% {
+      text-shadow:0.33px 0.18px 1px red,
+                    -0.32px 0.19px 1px green,
+                    -0.01px -0.38px 1px blue; 
+     } 
+    
+    
+
+    
+     15% {
+      text-shadow:0.43px 0.59px 1px red,
+                    -0.73px 0.08px 1px green,
+                    0.30px -0.67px 1px blue; 
+     } 
+    
+    
+
+    
+     22% {
+      text-shadow:0.21px 1.11px 1px red,
+                    -1.07px -0.37px 1px green,
+                    0.86px -0.74px 1px blue; 
+     } 
+    
+    
+
+    
+     29% {
+      text-shadow:-0.39px 1.53px 1px red,
+                    -1.13px -1.11px 1px green,
+                    1.53px -0.43px 1px blue; 
+     } 
+    
+    
+
+    
+     36% {
+      text-shadow:-1.35px 1.63px 1px red,
+                    -0.74px -1.99px 1px green,
+                    2.09px 0.35px 1px blue; 
+     } 
+    
+    
+
+    
+     43% {
+      text-shadow:-2.55px 1.20px 1px red,
+                    0.24px -2.81px 1px green,
+                    2.31px 1.61px 1px blue; 
+     } 
+    
+    
+
+    
+     50% {
+      text-shadow:-4.50px 0.00px 1px red,
+                    2.25px -3.90px 1px green,
+                    2.25px 3.90px 1px blue; 
+     } 
+    
+    
+
+    
+     57% {
+      text-shadow:-2.55px -1.20px 1px red,
+                    2.31px -1.61px 1px green,
+                    0.24px 2.81px 1px blue; 
+     } 
+    
+    
+
+    
+     64% {
+      text-shadow:-1.35px -1.63px 1px red,
+                    2.09px -0.35px 1px green,
+                    -0.74px 1.99px 1px blue; 
+     } 
+    
+    
+
+    
+     71% {
+      text-shadow:-0.39px -1.53px 1px red,
+                    1.53px 0.43px 1px green,
+                    -1.13px 1.11px 1px blue; 
+     } 
+    
+    
+
+    
+     78% {
+      text-shadow:0.21px -1.11px 1px red,
+                    0.86px 0.74px 1px green,
+                    -1.07px 0.37px 1px blue; 
+     } 
+    
+    
+
+    
+     85% {
+      text-shadow:0.43px -0.59px 1px red,
+                    0.30px 0.67px 1px green,
+                    -0.73px -0.08px 1px blue; 
+     } 
+    
+    
+
+    
+     92% {
+      text-shadow:0.33px -0.18px 1px red,
+                    -0.01px 0.38px 1px green,
+                    -0.32px -0.19px 1px blue; 
+     } 
+    
+    
+
+    
+     99% {
+      text-shadow:0.05px -0.00px 1px red,
+                    -0.02px 0.04px 1px green,
+                    -0.03px -0.04px 1px blue; 
+     } 
+    
+    
+    }
 
 
     @keyframes fadein {
       from {
         opacity: 0%;
+        transform: translate(0em, 2em);
+      }
+
+      70% {
+        opacity: 100%;
+        transform: translate(0em, 0em);
+        transform: rotate(-2deg);
+      }
+
+      85% {
+        opacity: 100%;
+        transform: rotate(2deg);
       }
 
       to {
+        transform: rotate(0deg);
         opacity: 100%;
       }
     }
 
     @media screen {
+      html{
+        background: radial-gradient(ellipse at top, #9dbcff, transparent),
+            radial-gradient(ellipse at bottom, #ffbcbc, transparent);
+      }
+
+      body {
+        background: rgba(0,0,0,0);
+        transform: rotate(-1.5deg);
+      }
+
+      * {
+        animation-name: chromaberation;
+        animation-duration: 1.0s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+      }
+
       .education, .skills, .research, .software-projects {
         animation-name: fadein;
-        animation-duration: 2s;
+        /* animation-name: fadein,chromaberation; */
+        animation-duration: 1.0s;
         opacity: 0;
         animation-fill-mode: forwards;
       }
       .education { animation-delay: 0s;}
-      .skills { animation-delay: 1s;}
-      .research { animation-delay: 2s;}
-      .software-projects { animation-delay: 2s;}
+      .skills { animation-delay: 0.3s;}
+      .research { animation-delay: 0.6s;}
+      .software-projects { animation-delay: 0.9s;}
     }
 
 

@@ -322,8 +322,11 @@
 
     @media screen {
       html{
-        background: radial-gradient(ellipse at top, #9dbcff, transparent),
-            radial-gradient(ellipse at bottom, #ffbcbc, transparent);
+        background-color: #f7f7f7;
+        opacity: 1;
+        background-image:  repeating-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), repeating-linear-gradient(45deg, #ffffff 25%, #f7f7f7 25%, #f7f7f7 75%, #ffffff 75%, #ffffff);
+        background-position: 0 0, 160px 160px;
+        background-size: 320px 320px;   
       }
 
       body {
@@ -344,6 +347,7 @@
         opacity: 0;
         animation-fill-mode: forwards;
       }
+
       .education { animation-delay: 0s;}
       .skills { animation-delay: 0.3s;}
       .research { animation-delay: 0.6s;}

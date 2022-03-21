@@ -8,7 +8,7 @@ n = int(sys.argv[1])
 
 def getColors(i):
     magnitude = 1 - math.sqrt(np.abs(i-50) / 50)
-    magnitude *= 7
+    magnitude *= 9
     angle = 2*math.pi * (i/100)
     rot1 = np.exp(angle * 1j)
     rot2 = np.exp((2*math.pi / 3) * 1j)
@@ -23,7 +23,7 @@ def getColors(i):
 for i in np.linspace(0,100, n):
     ra,rb, ga,gb, ba,bb = getColors(i)
     mag = 1 - math.sqrt(np.abs(i-50) / 50)
-    mag *= 2
+    mag *= 10
     print(f"""
     
      {int(i)}% {{

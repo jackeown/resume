@@ -330,6 +330,19 @@
       }
     }
 
+    @keyframes bodyAnimation {
+      from {
+        opacity:0;
+        transform: rotate(-4deg) scale(0.85) translate(0rem 3rem);
+      }
+
+
+      to {
+        transform: rotate(-4deg) scale(0.85);
+        opacity:100%;
+      }
+    }
+
     @media screen {
       html{
         color: transparent;
@@ -343,11 +356,13 @@
       body {
         background: white;
         box-shadow: 2px 2px 50px -5px rgb(200,200,200);
-        transform: rotate(-5.5deg) scale(0.85);
         padding: 2rem 10rem;
         width: 1000px;
         max-width:90%;
         font-size: large;
+        animation-name: bodyAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
       }
 
       h1 {

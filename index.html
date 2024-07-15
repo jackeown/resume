@@ -4,410 +4,16 @@
 
 <head>
   <link rel="stylesheet" href="https://latex.now.sh/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <body>
-
-  <style>
-
-    .education{
-
-    }
-
-    .skills > div{
-      display:flex;
-      flex-wrap: wrap;
-    }
-
-    .research {
-      page-break-after: always;
-    }
-
-    .software-projects{
-
-    }
-
-
-    @keyframes chromaberation {
-
-    
-      0% {
-      text-shadow:0.00px 0.00px 0.00px red,
-                    -0.00px 0.00px 0.00px green,
-                    0.00px -0.00px 0.00px blue; 
-     } 
-    
-    
-
-    
-     3% {
-      text-shadow:0.31px 0.07px 0.35px red,
-                    -0.21px 0.23px 0.35px green,
-                    -0.10px -0.30px 0.35px blue; 
-     } 
-    
-    
-
-    
-     6% {
-      text-shadow:0.58px 0.27px 0.72px red,
-                    -0.53px 0.37px 0.72px green,
-                    -0.06px -0.64px 0.72px blue; 
-     } 
-    
-    
-
-    
-     10% {
-      text-shadow:0.78px 0.60px 1.09px red,
-                    -0.91px 0.38px 1.09px green,
-                    0.12px -0.98px 1.09px blue; 
-     } 
-    
-    
-
-    
-     13% {
-      text-shadow:0.87px 1.02px 1.49px red,
-                    -1.32px 0.24px 1.49px green,
-                    0.45px -1.26px 1.49px blue; 
-     } 
-    
-    
-
-    
-     17% {
-      text-shadow:0.80px 1.52px 1.91px red,
-                    -1.71px -0.06px 1.91px green,
-                    0.91px -1.45px 1.91px blue; 
-     } 
-    
-    
-
-    
-     20% {
-      text-shadow:0.56px 2.03px 2.34px red,
-                    -2.04px -0.53px 2.34px green,
-                    1.48px -1.50px 2.34px blue; 
-     } 
-    
-    
-
-    
-     24% {
-      text-shadow:0.14px 2.52px 2.81px red,
-                    -2.25px -1.14px 2.81px green,
-                    2.12px -1.38px 2.81px blue; 
-     } 
-    
-    
-
-    
-     27% {
-      text-shadow:-0.48px 2.94px 3.30px red,
-                    -2.30px -1.88px 3.30px green,
-                    2.78px -1.05px 3.30px blue; 
-     } 
-    
-    
-
-    
-     31% {
-      text-shadow:-1.28px 3.21px 3.84px red,
-                    -2.14px -2.71px 3.84px green,
-                    3.42px -0.50px 3.84px blue; 
-     } 
-    
-    
-
-    
-     34% {
-      text-shadow:-2.24px 3.30px 4.43px red,
-                    -1.74px -3.59px 4.43px green,
-                    3.98px 0.29px 4.43px blue; 
-     } 
-    
-    
-
-    
-     37% {
-      text-shadow:-3.32px 3.15px 5.09px red,
-                    -1.06px -4.45px 5.09px green,
-                    4.39px 1.30px 5.09px blue; 
-     } 
-    
-    
-
-    
-     41% {
-      text-shadow:-4.51px 2.71px 5.85px red,
-                    -0.10px -5.26px 5.85px green,
-                    4.60px 2.55px 5.85px blue; 
-     } 
-    
-    
-
-    
-     44% {
-      text-shadow:-5.79px 1.95px 6.78px red,
-                    1.20px -5.99px 6.78px green,
-                    4.58px 4.04px 6.78px blue; 
-     } 
-    
-    
-
-    
-     48% {
-      text-shadow:-7.29px 0.79px 8.14px red,
-                    2.96px -6.71px 8.14px green,
-                    4.33px 5.91px 8.14px blue; 
-     } 
-    
-    
-
-    
-     51% {
-      text-shadow:-7.29px -0.79px 8.14px red,
-                    4.33px -5.91px 8.14px green,
-                    2.96px 6.71px 8.14px blue; 
-     } 
-    
-    
-
-    
-     55% {
-      text-shadow:-5.79px -1.95px 6.78px red,
-                    4.58px -4.04px 6.78px green,
-                    1.20px 5.99px 6.78px blue; 
-     } 
-    
-    
-
-    
-     58% {
-      text-shadow:-4.51px -2.71px 5.85px red,
-                    4.60px -2.55px 5.85px green,
-                    -0.10px 5.26px 5.85px blue; 
-     } 
-    
-    
-
-    
-     62% {
-      text-shadow:-3.32px -3.15px 5.09px red,
-                    4.39px -1.30px 5.09px green,
-                    -1.06px 4.45px 5.09px blue; 
-     } 
-    
-    
-
-    
-     65% {
-      text-shadow:-2.24px -3.30px 4.43px red,
-                    3.98px -0.29px 4.43px green,
-                    -1.74px 3.59px 4.43px blue; 
-     } 
-    
-    
-
-    
-     68% {
-      text-shadow:-1.28px -3.21px 3.84px red,
-                    3.42px 0.50px 3.84px green,
-                    -2.14px 2.71px 3.84px blue; 
-     } 
-    
-    
-
-    
-     72% {
-      text-shadow:-0.48px -2.94px 3.30px red,
-                    2.78px 1.05px 3.30px green,
-                    -2.30px 1.88px 3.30px blue; 
-     } 
-    
-    
-
-    
-     75% {
-      text-shadow:0.14px -2.52px 2.81px red,
-                    2.12px 1.38px 2.81px green,
-                    -2.25px 1.14px 2.81px blue; 
-     } 
-    
-    
-
-    
-     79% {
-      text-shadow:0.56px -2.03px 2.34px red,
-                    1.48px 1.50px 2.34px green,
-                    -2.04px 0.53px 2.34px blue; 
-     } 
-    
-    
-
-    
-     82% {
-      text-shadow:0.80px -1.52px 1.91px red,
-                    0.91px 1.45px 1.91px green,
-                    -1.71px 0.06px 1.91px blue; 
-     } 
-    
-    
-
-    
-     86% {
-      text-shadow:0.87px -1.02px 1.49px red,
-                    0.45px 1.26px 1.49px green,
-                    -1.32px -0.24px 1.49px blue; 
-     } 
-    
-    
-
-    
-     89% {
-      text-shadow:0.78px -0.60px 1.09px red,
-                    0.12px 0.98px 1.09px green,
-                    -0.91px -0.38px 1.09px blue; 
-     } 
-    
-    
-
-    
-     93% {
-      text-shadow:0.58px -0.27px 0.72px red,
-                    -0.06px 0.64px 0.72px green,
-                    -0.53px -0.37px 0.72px blue; 
-     } 
-    
-    
-
-    
-     96% {
-      text-shadow:0.31px -0.07px 0.35px red,
-                    -0.10px 0.30px 0.35px green,
-                    -0.21px -0.23px 0.35px blue; 
-     } 
-    
-    }
-
-
-    @keyframes fadein {
-      from {
-        opacity: 0%;
-      }
-
-      85% {
-        opacity: 100%;
-      }
-
-      to {
-        transform: rotate(0deg);
-        opacity:100%;
-      }
-    }
-
-    @keyframes bump {
-      from {
-        transform: translate(0em, 2em);
-      }
-
-      70% {
-        transform: translate(0em, 0em);
-        transform: rotate(-2deg);
-      }
-
-      85% {
-        transform: rotate(2deg);
-      }
-
-      to {
-        transform: rotate(0deg);
-        opacity:100%;
-      }
-    }
-
-    @keyframes bodyAnimation {
-      from {
-        opacity:0;
-        transform: rotate(-4deg) scale(0.85) translate(0rem 3rem);
-      }
-
-
-      to {
-        transform: rotate(-4deg) scale(0.85);
-        opacity:100%;
-      }
-    }
-
-    @media screen {
-      html{
-        color: transparent;
-        background-color: #f7f7f7;
-        opacity: 1;
-        background-image:  repeating-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), repeating-linear-gradient(45deg, #ffffff 25%, #f7f7f7 25%, #f7f7f7 75%, #ffffff 75%, #ffffff);
-        background-position: 0 0, 160px 160px;
-        background-size: 320px 320px;   
-      }
-
-      body {
-        background: white;
-        box-shadow: 2px 2px 50px -5px rgb(200,200,200);
-        padding: 2rem 10rem;
-        width: 1000px;
-        max-width:90%;
-        font-size: large;
-      }
-
-      h1 {
-        opacity:0;
-        animation-name: fadein, chromaberation;
-        animation-duration: 1.0s;
-        animation-delay: 0.4s;
-        animation-fill-mode: forwards;
-      }
-
-      .education, .skills, .research, .software-projects {
-        animation-name: fadein, bump;
-        animation-duration: 1.0s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-      }
-
-      .education { animation-delay: 0.8s;}
-      .skills { animation-delay: 1.2s;}
-      .research { animation-delay: 1.6s;}
-      .software-projects { animation-delay: 2.0s;}
-    }
-
-    @media screen and (max-width: 700px) {
-      .skills > div {
-        display: block;
-      }
-
-      body{
-        margin:0.5rem;
-        transform: rotate(0deg);
-        background: transparent;
-        padding:1em;
-        box-shadow:none;
-      }
-    }
-
-    @media screen and (min-width:701px) {
-      body {
-          animation-name: bodyAnimation;
-          animation-duration: 1s;
-          animation-fill-mode: forwards;
-      }
-
-    }
-
-
-  </style>
   <!-- 
       What To Include:
       
@@ -416,58 +22,128 @@
       + Interests / Hobbies
     -->
 
-  <h1> Jack McKeown </h1>
-
+  <h1> <span>Jack McKeown</span><span style="font-family:monospace;font-weight:100;font-size:0.5em;line-height:0.4em;float:right;padding-top:1.5em;">jackamckeown@gmail.com</span></h1>
+    <hr>
   <div class="education">
     <h2>Education</h2>
     <ul>
       <li>
         <b>University of Minnesota, Duluth <span style="float:right;">2014 - 2018</span></b> <br>
         <ul>
-          <li>Bachelor of Science in Mathematics and Computer Science</li>
+          <li><span style='text-decoration: underline; font-weight:bold;'>Bachelor of Science</span> in Mathematics and Computer Science</li>
         </ul>
       </li>
 
-
       <li>
-        <b>University of Miami <span style="float:right;">2018 - &nbsp&nbsp&nbsp&nbsp</span></b><br>
+        <b>University of Miami - advised by Dr. Geoff Sutcliffe<span style="float:right;">2018 - 2024</span></b><br>
         <ul>
-          <li>Master of Science in Computer Science - 2021</li>
-          <li>Currently a 4th year Ph.D. Student</li>
-          <li>Advised by Dr. Geoff Sutcliffe (The TPTP guy!)</li>
+          <li><span style='text-decoration: underline; font-weight:bold;'>Master of Science</span> in Computer Science - 2021
+            <ul>
+              <li>Clause Representation for Proof Guidance Using Neural Networks</li>
+            </ul>
+          </li>
+          <li><span style='text-decoration: underline; font-weight:bold;'>Ph.D.</span> in Computer Science - 2024
+            <ul>
+              <li>Reinforcement Learning for Automated Theorem Proving</li>
+            </ul>
+          </li>
+
         </ul>
       </li>
     </ul>
   </div>
 
+
+
+
+  
+
+
+
   <div class="skills">
-    <h2>Programming Languages / Skills</h2>
+    <h2>Skills</h2>
     <div>
       <ul>
-        <li>I have strong knowledge of
+        <li>Languages
           <ul>
             <li>Python</li>
-            <li>PyTorch</li>
             <li>C & C++</li>
-            <li>Git & Github</li>
-            <li>HTML, CSS, & JavaScript</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>LaTeX</li>
+            <li>SQL</li>
+            <li>JSON & YAML</li>
           </ul>
         </li>
       </ul>
-  
+
       <ul>
         <li>
-          I have some experience with
+          Tools
           <ul>
-            <li>Java</li>
-            <li>Docker</li>
+            <li>PyTorch & TensorFlow</li>
+            <li>Numpy, SciPy, and Pandas</li>
+            <li>scikit-learn</li>
+            <li>Cython</li>
+            <li>Matplotlib, D3.js</li>
+            <li>FastAPI</li>
+            <li>Shell & Linux</li>
+            <li>Docker / Podman</li>
+            <li>Kubernetes</li>
+            <li>Git & Github</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          General Strengths & Passions
+          <ul>
+            <li>Probability & Statistics</li>
+            <li>Machine Learning <br>&nbsp;&nbsp;&nbsp;(Supervised, <br>&nbsp;&nbsp;&nbsp;Unsupervised/Self-supervised, <br>&nbsp;&nbsp;&nbsp;and Reinforcement Learning)</li>
+            <li>Neural Networks <br>&nbsp;&nbsp;&nbsp;(MLPs, CNNs, GNNs, <br>&nbsp;&nbsp;&nbsp; Transformers, Diffusion, etc.) </li>
+            <li>Automated Reasoning / <br>&nbsp;&nbsp;&nbsp;Automated Theorem Proving </li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 
+
+
+
+
   <div class="research">
+    <h2>Work Experience</h2>
+    <ul>
+      <li><b>Software Developer Intern</b> <span style="float:right;; font-weight:bold">ImageTrend : 2015</span></li>
+      <li><b>Teaching Assistant</b>  <span style="float:right;; font-weight:bold">University of Miami : 2018 - 2023</span>
+        <ul style="line-height: 1.1em;">
+          <li><span style="text-decoration: underline;">CSC220</span> - Computer Programming II</li>
+          <li><span style="text-decoration: underline;">CSC317</span> - Data Structures and Algorithm Analysis</li>
+          <li><span style="text-decoration: underline;">CSC419</span> - Programming Languages</li>
+          <li><span style="text-decoration: underline;">CSC322</span> - C and Unix Programming</li>
+        </ul>
+
+      </li>
+      <li><b>System Administrator</b> <span style="float:right; font-weight:bold"> University of Miami : 2022 - 2023</span>
+        <ul>
+          <li style="line-height: 1.1em">Managed and maintained linux servers and lab machines: created user accounts, installed software, and configured networking</li>
+        </ul>
+      </li>
+      <li><b>Research Assistant</b> <span style="float:right; font-weight:bold"> University of Miami : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024</span>
+        <ul>
+          <li>Migrated StarExec cluster into AWS using Kubernetes</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  <!-- <div class="research">
     <h2>Research Interests</h2>
     <p>
       I am interested in machine learning and automated theorem proving.
@@ -476,17 +152,24 @@
       and I believe that automated reasoning can benefit machine learning by providing strong inductive biases.
     </p>
 
-    <p></p>
+  </div> -->
 
 
-  </div>
+
+
+
+
+
+
+
+
 
 
 
   <div class="software-projects">
-    <h2>Software Projects - <a href="https://github.com/jackeown"><i class="fa-brands fa-github"></i></a></h2>
+    <h2>Software Projects - <a id="github" style="text-decoration: none;" href="https://github.com/jackeown"><i class="fa-brands fa-github"></i>&nbsp;<span style="font-family:monospace;font-weight:100;font-size:0.7em;">https://github.com/jackeown</span></a></h2>
     <ul>
-      <li><a href="http://www.tptp.org/cgi-bin/SystemOnTSTP?TPTPProblem=PUZ001%2B1&SystemAndVersion=E---2.6">IDV -
+      <li><a href="https://tptp.org/cgi-bin/SystemOnTSTP?TPTPProblem=PUZ001%2B1&SystemAndVersion=E---3.2.0">IDV -
           Interactive Derivation Viewer</a> - I helped my advisor Geoff Sutcliffe port IDV (a proof visualization
         software) to JavaScript and HTML from its old form as a Java applet.</li>
       <li><a href="https://starexec.ccs.miami.edu">StarExec Miami</a> - I help to maintain the Miami fork of StarExec
@@ -502,6 +185,66 @@
       <li><a href="https://github.com/jackeown/whoIsHome">whoIsHome</a> - A friendly network monitoring tool.</li>
     </ul>
   </div>
+
+
+
+
+  <script>
+
+    // Crazy hack to fix font rendering
+    fixFontRendering = function() {
+      let elem = document.body;
+      elem.addEventListener('animationend', () => {
+        // Check if printing is in progress
+        if (window.matchMedia('print').matches) {
+          return; // Exit the function if the page is being printed
+        }
+
+        // Save the current transform value
+        const transformValue = getComputedStyle(elem).transform;
+        
+        // Temporarily remove transformations
+        elem.style.transform = 'none';
+        elem.style.animationFillMode = "none";
+
+        // Reapply the original transformation after the next repaint
+        requestAnimationFrame(() => {
+          elem.style.transform = transformValue;
+          // Optionally restore the fill mode, if needed
+          elem.style.animationFillMode = "forwards";
+        });
+      });
+    }
+    document.addEventListener('DOMContentLoaded', fixFontRendering);
+
+
+    // Hover animation for h1:
+    const h1 = document.querySelector('h1');
+    listener = function(elem){
+      return function(){
+        if (Date.now() - window.lastDone < 1500)
+          return;
+
+        elem.style.opacity = 1;
+        elem.style.animation = "none";
+        setTimeout(() => {
+          elem.style.animation = "chromaberation 1.0s backwards";
+          setTimeout(() => {
+            fixFontRendering();
+          },1000);
+        }, 100);
+        window.lastDone = Date.now();
+      }
+    }
+    h1.addEventListener('mouseover', listener(h1));
+
+    // Also put the animation on my github link:
+    const github = document.querySelector('#github');
+    github.addEventListener('mouseover', listener(github));
+      
+
+  </script>
+
 
 </body>
 

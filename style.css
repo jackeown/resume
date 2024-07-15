@@ -1,0 +1,462 @@
+
+.education{
+
+}
+
+.skills > div{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.research {
+  /* page-break-after: always; */
+}
+
+.software-projects{
+
+}
+
+
+.skills ul {
+    padding: 0px 0px 0px 2em;
+    line-height: 1.2em;
+}
+
+
+
+
+
+
+
+/* Animations Begin */
+
+@keyframes chromaberation {
+
+
+  0% {
+  text-shadow:0.00px 0.00px 0.00px red,
+                -0.00px 0.00px 0.00px green,
+                0.00px -0.00px 0.00px blue; 
+ } 
+
+
+
+
+ 3% {
+  text-shadow:0.31px 0.07px 0.35px red,
+                -0.21px 0.23px 0.35px green,
+                -0.10px -0.30px 0.35px blue; 
+ } 
+
+
+
+
+ 6% {
+  text-shadow:0.58px 0.27px 0.72px red,
+                -0.53px 0.37px 0.72px green,
+                -0.06px -0.64px 0.72px blue; 
+ } 
+
+
+
+
+ 10% {
+  text-shadow:0.78px 0.60px 1.09px red,
+                -0.91px 0.38px 1.09px green,
+                0.12px -0.98px 1.09px blue; 
+ } 
+
+
+
+
+ 13% {
+  text-shadow:0.87px 1.02px 1.49px red,
+                -1.32px 0.24px 1.49px green,
+                0.45px -1.26px 1.49px blue; 
+ } 
+
+
+
+
+ 17% {
+  text-shadow:0.80px 1.52px 1.91px red,
+                -1.71px -0.06px 1.91px green,
+                0.91px -1.45px 1.91px blue; 
+ } 
+
+
+
+
+ 20% {
+  text-shadow:0.56px 2.03px 2.34px red,
+                -2.04px -0.53px 2.34px green,
+                1.48px -1.50px 2.34px blue; 
+ } 
+
+
+
+
+ 24% {
+  text-shadow:0.14px 2.52px 2.81px red,
+                -2.25px -1.14px 2.81px green,
+                2.12px -1.38px 2.81px blue; 
+ } 
+
+
+
+
+ 27% {
+  text-shadow:-0.48px 2.94px 3.30px red,
+                -2.30px -1.88px 3.30px green,
+                2.78px -1.05px 3.30px blue; 
+ } 
+
+
+
+
+ 31% {
+  text-shadow:-1.28px 3.21px 3.84px red,
+                -2.14px -2.71px 3.84px green,
+                3.42px -0.50px 3.84px blue; 
+ } 
+
+
+
+
+ 34% {
+  text-shadow:-2.24px 3.30px 4.43px red,
+                -1.74px -3.59px 4.43px green,
+                3.98px 0.29px 4.43px blue; 
+ } 
+
+
+
+
+ 37% {
+  text-shadow:-3.32px 3.15px 5.09px red,
+                -1.06px -4.45px 5.09px green,
+                4.39px 1.30px 5.09px blue; 
+ } 
+
+
+
+
+ 41% {
+  text-shadow:-4.51px 2.71px 5.85px red,
+                -0.10px -5.26px 5.85px green,
+                4.60px 2.55px 5.85px blue; 
+ } 
+
+
+
+
+ 44% {
+  text-shadow:-5.79px 1.95px 6.78px red,
+                1.20px -5.99px 6.78px green,
+                4.58px 4.04px 6.78px blue; 
+ } 
+
+
+
+
+ 48% {
+  text-shadow:-7.29px 0.79px 8.14px red,
+                2.96px -6.71px 8.14px green,
+                4.33px 5.91px 8.14px blue; 
+ } 
+
+
+
+
+ 51% {
+  text-shadow:-7.29px -0.79px 8.14px red,
+                4.33px -5.91px 8.14px green,
+                2.96px 6.71px 8.14px blue; 
+ } 
+
+
+
+
+ 55% {
+  text-shadow:-5.79px -1.95px 6.78px red,
+                4.58px -4.04px 6.78px green,
+                1.20px 5.99px 6.78px blue; 
+ } 
+
+
+
+
+ 58% {
+  text-shadow:-4.51px -2.71px 5.85px red,
+                4.60px -2.55px 5.85px green,
+                -0.10px 5.26px 5.85px blue; 
+ } 
+
+
+
+
+ 62% {
+  text-shadow:-3.32px -3.15px 5.09px red,
+                4.39px -1.30px 5.09px green,
+                -1.06px 4.45px 5.09px blue; 
+ } 
+
+
+
+
+ 65% {
+  text-shadow:-2.24px -3.30px 4.43px red,
+                3.98px -0.29px 4.43px green,
+                -1.74px 3.59px 4.43px blue; 
+ } 
+
+
+
+
+ 68% {
+  text-shadow:-1.28px -3.21px 3.84px red,
+                3.42px 0.50px 3.84px green,
+                -2.14px 2.71px 3.84px blue; 
+ } 
+
+
+
+
+ 72% {
+  text-shadow:-0.48px -2.94px 3.30px red,
+                2.78px 1.05px 3.30px green,
+                -2.30px 1.88px 3.30px blue; 
+ } 
+
+
+
+
+ 75% {
+  text-shadow:0.14px -2.52px 2.81px red,
+                2.12px 1.38px 2.81px green,
+                -2.25px 1.14px 2.81px blue; 
+ } 
+
+
+
+
+ 79% {
+  text-shadow:0.56px -2.03px 2.34px red,
+                1.48px 1.50px 2.34px green,
+                -2.04px 0.53px 2.34px blue; 
+ } 
+
+
+
+
+ 82% {
+  text-shadow:0.80px -1.52px 1.91px red,
+                0.91px 1.45px 1.91px green,
+                -1.71px 0.06px 1.91px blue; 
+ } 
+
+
+
+
+ 86% {
+  text-shadow:0.87px -1.02px 1.49px red,
+                0.45px 1.26px 1.49px green,
+                -1.32px -0.24px 1.49px blue; 
+ } 
+
+
+
+
+ 89% {
+  text-shadow:0.78px -0.60px 1.09px red,
+                0.12px 0.98px 1.09px green,
+                -0.91px -0.38px 1.09px blue; 
+ } 
+
+
+
+
+ 93% {
+  text-shadow:0.58px -0.27px 0.72px red,
+                -0.06px 0.64px 0.72px green,
+                -0.53px -0.37px 0.72px blue; 
+ } 
+
+
+
+
+ 96% {
+  text-shadow:0.31px -0.07px 0.35px red,
+                -0.10px 0.30px 0.35px green,
+                -0.21px -0.23px 0.35px blue; 
+ } 
+
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+
+  85% {
+    opacity: 100%;
+  }
+
+  to {
+    opacity:100%;
+  }
+}
+
+@keyframes bump {
+  from {
+    transform: translate(0em, 2em);
+  }
+
+  70% {
+    transform: translate(0em, 0em);
+    transform: rotate3d(0,0,1,-2deg);
+    transform-style:preserve-3d;
+  }
+
+  85% {
+    transform: rotate3d(0,0,1,2deg);
+    transform-style:preserve-3d;
+  }
+
+  to {
+    transform: rotate3d(0,0,1,0deg);
+    transform-style:preserve-3d;
+    opacity:100%;
+  }
+}
+
+@keyframes bodyAnimation {
+  from {
+    opacity: 0%;
+    transform: scale(1) rotate3d(0,0,1,-4deg) translate(0rem, 4rem);
+    transform-style: preserve-3d;
+  }
+
+
+  to {
+    transform: scale(0.85) rotate3d(0,0,1,-4deg) translate(-3rem, -3rem);
+    transform-style: preserve-3d;
+    opacity:100%;
+  }
+}
+
+/* Animations End */
+
+/* Mobile / Desktop / Tablet */
+@media screen {
+  html{
+    color: transparent;
+    background-color: #f7f7f7;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), repeating-linear-gradient(45deg, #ffffff 25%, #efefef 25%, #f7f7f7 75%, #ffffff 75%, #ffffff);
+    animation: pulse 60s cubic-bezier(1, 0, 0, 1) infinite;
+
+  }
+
+  @keyframes pulse {
+      0%, 10%, 90%, 100%{ 
+        background-position: 0 0, 50% 50%;
+        background-size: 25% 25%;
+      }
+      40%, 60% { 
+        background-position: 0 0, 50% 50%;
+        background-size: 12.5% 12.5%;
+      }
+  }
+
+  body {
+    background: white;
+    box-shadow: 2px 2px 50px -5px rgb(200,200,200);
+    padding: 2.3rem 7rem;
+    width: 1000px;
+    max-width:90%;
+    font-size: large;
+    transition: 1s all;
+  }
+
+  h1 {
+    opacity:0;
+    animation-name: fadein, chromaberation;
+    animation-duration: 1.0s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+
+  div{
+    transition: 1s all;
+  }
+
+
+  .education, .skills, .research, .software-projects {
+    animation-name: fadein, bump;
+    animation-duration: 1.0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .education { animation-delay: 0.8s;}
+  .skills { animation-delay: 1.2s;}
+  .research { animation-delay: 1.6s;}
+  .software-projects { animation-delay: 2.0s;}
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  .skills > div {
+    display: block;
+  }
+
+  body{
+    margin:0.2rem;
+    transform: rotate(0deg);
+    background: transparent;
+    padding:1em;
+    box-shadow:none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width:701px) {
+  body {
+      animation-name: bodyAnimation;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+  }
+
+}
+
+
+
+/* Print (to pdf or otherwise) */
+@media print {
+    body{
+        padding: 0rem;
+        max-width:100ch;
+    }
+
+    h1{
+        margin-top:1rem;
+        margin-bottom: 0rem;
+    }
+
+    .education >h2, 
+    .skills >h2, 
+    .research >h2, 
+    .software-projects >h2 {
+        margin-bottom:0rem;
+        margin-top:0.0rem;
+    }
+
+
+    .software-projects >h2{
+        margin-top:1.3rem;
+    }
+
+}
+

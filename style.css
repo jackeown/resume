@@ -435,6 +435,11 @@
 
 /* Print (to pdf or otherwise) */
 @media print {
+
+    html, body {
+        scroll-behavior: auto !important;
+    }
+
     body{
         padding: 0rem;
         max-width:100ch;
@@ -456,6 +461,11 @@
 
     .software-projects >h2{
         margin-top:1.3rem;
+    }
+
+    body, html {
+        transition: none !important;
+        animation: none !important;
     }
 
 }

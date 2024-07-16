@@ -241,7 +241,30 @@
     // Also put the animation on my github link:
     const github = document.querySelector('#github');
     github.addEventListener('mouseover', listener(github));
-      
+
+
+
+    // Hackiness for print stylesheet:
+    function delayPrint() {
+        window.scrollTo(0, 0);
+        setTimeout(() => {
+            window.print();
+        }, 500); // Adjust the delay as needed
+    }
+
+    window.onbeforeprint = function() {
+        window.scrollTo(0, 0);
+    };
+
+    document.addEventListener('keydown', function(event) {
+        if ((event.ctrlKey || event.metaKey) && event.key === 'p') {
+            event.preventDefault();
+            delayPrint();
+        }
+    });
+
+
+
 
   </script>
 

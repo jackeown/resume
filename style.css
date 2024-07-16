@@ -13,9 +13,17 @@
   /* page-break-after: always; */
 }
 
-.software-projects{
-
+/* .software-projects > ul > li {
+  display: flex;
+  flex-direction: row;
 }
+
+
+.software-projects > ul > li > a{
+  white-space: nowrap;
+} */
+
+
 
 
 .skills ul {

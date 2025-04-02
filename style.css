@@ -1,4 +1,8 @@
 
+*{
+  line-height:1.3em;
+}
+
 .education{
 
 }
@@ -9,9 +13,6 @@
   justify-content: space-evenly;
 }
 
-.research {
-  /* page-break-after: always; */
-}
 
 /* .software-projects > ul > li {
   display: flex;
@@ -24,11 +25,18 @@
 } */
 
 
+.section{
+  border-bottom: 1px solid black;
+}
+
+.work, .skills, .education, .software-projects {
+    margin-top:0.5em;
+}
 
 
 .skills ul {
     padding: 0px 0px 0px 2em;
-    line-height: 1.2em;
+    /* line-height: 1.1em; */
 }
 
 
@@ -401,7 +409,7 @@
   }
 
 
-  .education, .skills, .research, .software-projects {
+  .education, .skills, .work, .software-projects {
     animation-name: fadein, bump;
     animation-duration: 1.0s;
     opacity: 0;
@@ -410,7 +418,7 @@
 
   .education { animation-delay: 0.8s;}
   .skills { animation-delay: 1.2s;}
-  .research { animation-delay: 1.6s;}
+  .work { animation-delay: 1.6s;}
   .software-projects { animation-delay: 2.0s;}
 }
 
@@ -460,7 +468,7 @@
 
     .education >h2, 
     .skills >h2, 
-    .research >h2, 
+    .work >h2, 
     .software-projects >h2 {
         margin-bottom:0rem;
         margin-top:0.0rem;
@@ -468,7 +476,7 @@
 
 
     .software-projects >h2{
-        margin-top:1.3rem;
+        margin-top:1.2rem;
     }
 
     body, html {

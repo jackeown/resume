@@ -1,10 +1,14 @@
 
 *{
-  line-height:1.3em;
+  line-height:1.2em;
 }
 
 .education{
 
+}
+
+h1 {
+  margin: 0px;
 }
 
 .skills > div{
@@ -40,6 +44,54 @@
 }
 
 
+h2{
+  margin-top: 0.4em;
+  margin-bottom:0;
+}
+
+.skills ul li {
+    line-height: 1.0em;
+}
+
+ul {
+  padding-left:1.7em;
+}
+
+
+/* work and education bullets */
+.work > ul > li, .education > ul > li {
+    margin: 0.05em 0em;
+    padding:0.4em 0;
+    transition: 0.3s all;
+}
+
+.work > ul > li > div, .education > ul > li > div {
+  display: flex;
+  flex-direction: row;
+  /* align-items:center; */
+  justify-content: space-between;
+}
+
+.work > ul > li > div > div, .education > ul > li > div > div {
+  max-width:69%;
+}
+
+.section > ul > li:hover, .section > div > ul > li:hover {
+    background:rgba(200,200,200,0.4);
+    border-radius:4px;
+}
+
+/* work and education locations and dates */
+.work > ul > li > div > span, .education > ul > li > div > span {
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width:13em;
+}
+
+.section > ul {
+  margin-top: 0px;
+}
 
 
 
@@ -461,11 +513,6 @@
         max-width:100ch;
     }
 
-    h1{
-        margin-top:1rem;
-        margin-bottom: 0rem;
-    }
-
     .education >h2, 
     .skills >h2, 
     .work >h2, 
@@ -475,9 +522,9 @@
     }
 
 
-    .software-projects >h2{
+    /* .software-projects >h2{
         margin-top:1.2rem;
-    }
+    } */
 
     body, html {
         transition: none !important;

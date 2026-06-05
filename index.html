@@ -132,6 +132,7 @@
         <span style="float:right;; font-weight:bold">ImageTrend : Summer 2015</span>
       </li> -->
 
+<!--
       <li>
         <div>
           <div>
@@ -146,6 +147,7 @@
           </span>
         </div>
       </li>
+-->
 
 
     </ul>
@@ -231,7 +233,7 @@
 
 
 
-  <div class="skills section">
+  <div class="skills section print-no-border">
     <h2>Skills</h2>
     <div>
       <ul>
@@ -376,6 +378,12 @@
 
 
   <script>
+
+    // Force page to scroll to top on load / refresh
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
 
     // Crazy hack to fix font rendering
     fixFontRendering = function() {

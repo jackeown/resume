@@ -45,6 +45,10 @@ h1 > span:first-child {
   justify-content: space-evenly;
 }
 
+.print-only {
+  display: none;
+}
+
 
 /* .software-projects > ul > li {
   display: flex;
@@ -661,6 +665,7 @@ ul {
     .skills >h2, 
     .work >h2, 
     .software-projects >h2 {
+        font-size: 20px;
         margin-bottom:0.08rem;
         margin-top:0.0rem;
         break-after: avoid;
@@ -668,12 +673,24 @@ ul {
     }
 
     .software-projects > h2 {
-        font-size: 20px;
         white-space: nowrap;
     }
 
     hr {
-        display: none;
+        display: block;
+        height: 0.5px;
+        border: 0;
+        background: #666;
+        margin: 0.08rem 0 0.12rem;
+    }
+
+    hr.print-only {
+        display: block;
+    }
+
+    .section-divider {
+        margin-top: 0.12rem;
+        margin-bottom: 0.18rem;
     }
 
     .section {

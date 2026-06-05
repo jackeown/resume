@@ -667,6 +667,11 @@ ul {
         page-break-after: avoid;
     }
 
+    .software-projects > h2 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
     hr {
         display: none;
     }

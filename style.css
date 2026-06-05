@@ -630,7 +630,26 @@ ul {
     }
 
     h1 {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        font-size: 34px;
         line-height: 0.9;
+    }
+
+    h1 > span {
+        display: inline-block;
+    }
+
+    h1 > span:last-child {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .contact {
+        justify-content: flex-start;
+        padding-top: 0;
     }
 
     ul {

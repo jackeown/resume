@@ -579,6 +579,13 @@ ul {
   .contact-separator {
     display: none;
   }
+    body {
+        opacity: 1 !important;
+        animation: none !important;
+        animation-name: none !important;
+        animation-fill-mode: none !important;
+        transform: none !important;
+    }
 }
 
 /* Desktop */

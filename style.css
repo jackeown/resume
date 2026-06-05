@@ -587,20 +587,34 @@ ul {
       margin: 3rem auto;
       transform: none;
   }
-
 }
 
-
+/* Full Desktop CSS styles - paper-on-a-desk falling and landing tilted effect */
+@media screen and (min-width:1001px) {
+  body {
+      opacity: 0;
+      animation-name: bodyAnimation;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+      animation-fill-mode: forwards;
+      transform-origin: center center;
+  }
+}
 
 /* Print (to pdf or otherwise) */
 @media print {
+
+    @page {
+        margin: 0.6in 0.5in 0.5in 0.5in;
+    }
 
     html, body {
         scroll-behavior: auto !important;
     }
 
     body{
-        padding: 0.15in 0.2in;
+        padding: 0;
+        margin: 0;
         max-width:100ch;
         font-size: 10pt;
     }
@@ -626,6 +640,11 @@ ul {
         margin-top: 0.35rem;
     }
 
+    /* Remove redundant horizontal borders at page breaks or end of document */
+    .print-no-border {
+        border-bottom: none !important;
+    }
+
     .section > ul > li,
     .work > ul > li,
     .education > ul > li {
@@ -648,14 +667,11 @@ ul {
         flex-basis: 12.5em;
     }
 
-
-    /* .software-projects >h2{
-        margin-top:1.2rem;
-    } */
-
     body, html {
         transition: none !important;
         animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
     }
 
 }

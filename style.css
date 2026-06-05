@@ -99,6 +99,7 @@ ul {
   flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .work > ul > li > div > div, .education > ul > li > div > div {

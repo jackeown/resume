@@ -1,0 +1,72 @@
+name: Render PDFs
+
+on:
+  push:
+    branches:
+      - main
+      - cv
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out resume branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: resume
+
+      - name: Check out CV branch
+        uses: actions/checkout@v4
+        with:
+          ref: cv
+          path: cv
+
+      - name: Check out workflow scripts
+        uses: actions/checkout@v4
+        with:
+          path: workflow
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright
+        working-directory: workflow
+        run: |
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Assemble Pages site
+        run: |
+          mkdir -p site
+          cp resume/index.html resume/style.css site/
+
+      - name: Render PDFs
+        working-directory: workflow
+        run: node .github/scripts/render-pdfs.mjs ../resume/index.html ../cv/index.html ../site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

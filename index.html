@@ -302,6 +302,12 @@
 
   <script>
 
+    // Force page to scroll to top on load / refresh
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     // Crazy hack to fix font rendering
     fixFontRendering = function() {
       let elem = document.body;

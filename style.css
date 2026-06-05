@@ -615,6 +615,10 @@ ul {
         page-break-after: avoid;
     }
 
+    hr {
+        display: none;
+    }
+
     .section {
         break-inside: avoid;
         page-break-inside: avoid;

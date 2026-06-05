@@ -1,6 +1,7 @@
 
 *{
-  line-height:1.2em;
+  box-sizing: border-box;
+  line-height:1.25em;
 }
 
 .education{
@@ -9,6 +10,33 @@
 
 h1 {
   margin: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  line-height: 1;
+}
+
+h1 > span:last-child {
+  float: none !important;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 1.2 !important;
+}
+
+h1 > span:first-child {
+  white-space: nowrap;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 0.25rem 0.5rem;
+  font-family: monospace;
+  font-size: 0.4em;
+  font-weight: 100;
+  padding-bottom: 0.2rem;
 }
 
 .skills > div{
@@ -30,11 +58,12 @@ h1 {
 
 
 .section{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.6rem;
 }
 
 .work, .skills, .education, .software-projects {
-    margin-top:0.5em;
+    margin-top:0.85rem;
 }
 
 
@@ -45,8 +74,8 @@ h1 {
 
 
 h2{
-  margin-top: 0.4em;
-  margin-bottom:0;
+  margin-top: 0;
+  margin-bottom:0.25rem;
 }
 
 .skills ul li {
@@ -54,26 +83,26 @@ h2{
 }
 
 ul {
-  padding-left:1.7em;
+  padding-left:1.45em;
 }
 
 
 /* work and education bullets */
 .work > ul > li, .education > ul > li {
-    margin: 0.05em 0em;
-    padding:0.4em 0;
+    margin: 0;
+    padding:0.45em 0;
     transition: 0.3s all;
 }
 
 .work > ul > li > div, .education > ul > li > div {
   display: flex;
   flex-direction: row;
-  /* align-items:center; */
+  gap: 2rem;
   justify-content: space-between;
 }
 
 .work > ul > li > div > div, .education > ul > li > div > div {
-  max-width:69%;
+  max-width:72%;
 }
 
 .section > ul > li:hover, .section > div > ul > li:hover {
@@ -86,11 +115,12 @@ ul {
     font-weight: bold;
     text-align: center;
     display: inline-block;
-    width:13em;
+    flex: 0 0 13.5em;
 }
 
 .section > ul {
   margin-top: 0px;
+  margin-bottom: 0;
 }
 
 
@@ -440,20 +470,17 @@ ul {
 
   body {
     background: white;
-    box-shadow: 2px 2px 50px -5px rgb(200,200,200);
-    padding: 2.3rem 7rem;
-    width: 80rem;
-    max-width:90%;
-    font-size: large;
+    color: #1c1c1c;
+    box-shadow: 0 1.25rem 4rem -1.5rem rgb(120,120,120);
+    padding: 2.5rem 6rem;
+    width: 74rem;
+    max-width:92%;
+    font-size: 1.05rem;
     transition: 1s all;
   }
 
   h1 {
-    opacity:0;
-    animation-name: fadein, chromaberation;
-    animation-duration: 1.0s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
+    opacity:1;
   }
 
   div{
@@ -462,10 +489,7 @@ ul {
 
 
   .education, .skills, .work, .software-projects {
-    animation-name: fadein, bump;
-    animation-duration: 1.0s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    opacity: 1;
   }
 
   .education { animation-delay: 0.8s;}
@@ -480,21 +504,88 @@ ul {
     display: block;
   }
 
+  h1 {
+    display: block;
+  }
+
+  h1 > span {
+    display: block;
+  }
+
+  h1 > span:last-child {
+    text-align: left;
+    white-space: normal;
+    padding-top: 0.6rem !important;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.2rem 0.5rem;
+  }
+
+  .contact-separator {
+    display: none;
+  }
+
+  .work > ul > li > div, .education > ul > li > div {
+    display: block;
+  }
+
+  .work > ul > li > div > div, .education > ul > li > div > div {
+    max-width: 100%;
+  }
+
+  .work > ul > li > div > span, .education > ul > li > div > span {
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-top: 0.25rem;
+  }
+
   body{
-    margin:0.2rem;
+    margin:0;
     transform: rotate(0deg);
     background: transparent;
-    padding:1em;
+    padding:1.2rem;
     box-shadow:none;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  body {
+    padding: 2.2rem 3.5rem;
+  }
+
+  h1 {
+    display: block;
+  }
+
+  h1 > span {
+    display: block;
+  }
+
+  h1 > span:last-child {
+    text-align: left;
+    white-space: normal;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+  }
+
+  .contact-separator {
+    display: none;
   }
 }
 
 /* Desktop */
 @media screen and (min-width:701px) {
   body {
-      animation-name: bodyAnimation;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      margin: 3rem auto;
+      transform: none;
   }
 
 }
@@ -509,16 +600,48 @@ ul {
     }
 
     body{
-        padding: 0rem;
+        padding: 0.15in 0.2in;
         max-width:100ch;
+        font-size: 10pt;
     }
 
     .education >h2, 
     .skills >h2, 
     .work >h2, 
     .software-projects >h2 {
-        margin-bottom:0rem;
+        margin-bottom:0.08rem;
         margin-top:0.0rem;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        padding-bottom: 0.35rem;
+        margin-top: 0.35rem;
+    }
+
+    .section > ul > li,
+    .work > ul > li,
+    .education > ul > li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .work > ul > li,
+    .education > ul > li {
+        padding: 0.25em 0;
+    }
+
+    .work > ul > li > div,
+    .education > ul > li > div {
+        gap: 1rem;
+    }
+
+    .work > ul > li > div > span,
+    .education > ul > li > div > span {
+        flex-basis: 12.5em;
     }
 
 
@@ -532,4 +655,3 @@ ul {
     }
 
 }
-

@@ -579,6 +579,13 @@ ul {
   .contact-separator {
     display: none;
   }
+  body {
+    opacity: 1 !important;
+    animation: none !important;
+    animation-name: none !important;
+    animation-fill-mode: none !important;
+    transform: none !important;
+  }
 }
 
 /* Desktop */
@@ -605,7 +612,7 @@ ul {
 @media print {
 
     @page {
-        margin: 0.6in 0.5in 0.5in 0.5in;
+        margin: 0.4in 0.5in 0.5in 0.5in;
     }
 
     html, body {
@@ -613,6 +620,7 @@ ul {
     }
 
     body{
+        background-color: #ffffff; /* ensure a pure white background */
         padding: 0;
         margin: 0;
         max-width:100ch;
@@ -660,6 +668,7 @@ ul {
     .work > ul > li > div,
     .education > ul > li > div {
         gap: 1rem;
+        align-items: center;
     }
 
     .work > ul > li > div > span,

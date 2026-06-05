@@ -623,7 +623,7 @@ ul {
     body{
         background-color: #ffffff; /* ensure a pure white background */
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         max-width:100ch;
         font-size: 9pt;
         line-height: 1.15em;

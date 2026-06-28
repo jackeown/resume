@@ -55,8 +55,9 @@ jobs:
 
       - name: Assemble Pages site
         run: |
-          mkdir -p site
+          mkdir -p site/cv
           cp resume/index.html resume/style.css site/
+          cp cv/index.html cv/style.css site/cv/
 
       - name: Render PDFs
         working-directory: workflow

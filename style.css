@@ -653,6 +653,16 @@ ul {
         margin-top: 0.35rem;
     }
 
+    .publications.section {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    .publications > h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
     /* Remove redundant horizontal borders at page breaks or end of document */
     .print-no-border {
         border-bottom: none !important;

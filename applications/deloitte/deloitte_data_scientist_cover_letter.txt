@@ -1,0 +1,25 @@
+John McKeown
+jackamckeown@gmail.com
+(347) 470-5225
+
+June 5, 2026
+
+Deloitte AI & Data Team
+
+Dear Hiring Team,
+
+I am writing to apply for the Data Scientist role in Deloitte's AI & Engineering practice. I am interested in the role because it sits at the intersection of the things I have spent the last several years doing: turning loosely defined technical problems into concrete modeling work, building reliable software around those models, and explaining the results clearly enough that other people can actually use them.
+
+My background is a mix of machine learning research, applied data analysis, and systems work. I recently completed a Ph.D. in Computer Science at the University of Miami, where my dissertation focused on search strategy selection for automated theorem proving. That work involved designing experiments, training and evaluating models, and being careful about what the results did and did not show. My master's work used graph neural networks for proof guidance, and I have continued working in automated reasoning as a postdoctoral researcher at TU Wien.
+
+I have also worked on more applied data science problems. As a postdoctoral associate at the University of Miami Miller School of Medicine, I analyzed EEG, galvanic skin response, and clinical data from traumatic brain injury patients. The goal was to develop models related to pain measurement and recovery likelihood. That work required the less glamorous but essential parts of data science: cleaning messy data, choosing defensible statistical methods, validating results, and communicating uncertainty to collaborators who were not machine learning specialists.
+
+Technically, I am strongest in Python and the scientific Python stack, including NumPy, pandas, scikit-learn, PyTorch, and TensorFlow. I am comfortable with supervised learning, reinforcement learning, graph neural networks, mixed effects models, SVMs, permutation tests, and experimental evaluation. I also bring software and infrastructure experience that I think is useful for a consulting environment. I helped migrate the StarExec cluster toward AWS using Kubernetes, and I have worked with Docker/Podman, Terraform, Linux servers, FastAPI, JavaScript, and web-based tools. I am not only interested in building a model; I care about whether the surrounding system is understandable, maintainable, and useful.
+
+The project-focused structure of this role appeals to me. I enjoy working independently, but I also like being close to the real problem and to the people who understand the context. In academic and research environments, I have had to manage ambiguous requirements, explain technical tradeoffs, write clearly, teach students, and collaborate across different levels of technical background. Those are the parts of the work I would expect to matter in client-facing data science as much as model accuracy does.
+
+I would be glad to bring my research depth, practical Python and machine learning experience, and careful communication style to Deloitte's AI & Data practice. Thank you for your consideration.
+
+Sincerely,
+
+John McKeown

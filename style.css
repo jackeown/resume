@@ -4,6 +4,10 @@
   line-height:1.25em;
 }
 
+#MathJax_Message {
+  display: none !important;
+}
+
 .education{
 
 }
